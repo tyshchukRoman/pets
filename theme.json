@@ -2,7 +2,11 @@
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"version": 2,
 	"settings": {
-    "appearenceTools": true,
+		"useRootPaddingAwareAlignments": true,
+		"appearenceTools": true,
+		"defaultDuotone": false,
+		"defaultPalette": false,
+		"defaultGradients": false,
 		"border": {},
 		"color": {
 			"palette": [
@@ -51,39 +55,227 @@
 					"name": "Primary",
 					"slug": "primary"
 				},
-        {
-          "color": "#F2968F",
+				{
+					"color": "#F2968F",
 					"name": "Secondary",
 					"slug": "secondary"
-        },
-        {
-          "color": "#7383D9",
+				},
+				{
+					"color": "#7383D9",
 					"name": "100",
 					"slug": "100"
-        },
-        {
-          "color": "#C97E54",
+				},
+				{
+					"color": "#C97E54",
 					"name": "200",
 					"slug": "200"
-        },
-        {
-          "color": "#C1CCE9",
+				},
+				{
+					"color": "#C1CCE9",
 					"name": "300",
 					"slug": "300"
-        },
-        {
-          "color": "#BF5E57",
+				},
+				{
+					"color": "#BF5E57",
 					"name": "400",
 					"slug": "400"
-        }
-      ]
-    },
-		"custom": {},
-		"spacing": {},
-		"typography": {}
-  },
-	"styles": {},
-	"customTemplates": {},
-	"templateParts": {},
-	"patterns": []
+				}
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"name": "Primary",
+					"slug": "primary",
+					"fontFamily": "Rubik, serif",
+					"fontFace": [
+						{
+							"fontFamily": "Rubik",
+							"fontWeight": "300",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Rubik-Light.ttf" ]
+						},
+						{
+							"fontFamily": "Rubik",
+							"fontWeight": "400",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Rubik-Regular.ttf" ]
+						},
+						{
+							"fontFamily": "Rubik",
+							"fontWeight": "500",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Rubik-SemiBold.ttf" ]
+						}
+					]
+				}
+			],
+			"fontSizes": [
+				{
+					"fluid": false,
+					"name": "950",
+					"size": "140px",
+					"slug": "950"
+				},
+				{
+					"fluid": false,
+					"name": "900",
+					"size": "64px",
+					"slug": "900"
+				},
+				{
+					"fluid": false,
+					"name": "800",
+					"size": "48px",
+					"slug": "800"
+				},
+				{
+					"fluid": false,
+					"name": "700",
+					"size": "40px",
+					"slug": "700"
+				},
+				{
+					"fluid": false,
+					"name": "600",
+					"size": "36px",
+					"slug": "600"
+				},
+				{
+					"fluid": false,
+					"name": "500",
+					"size": "32px",
+					"slug": "500"
+				},
+				{
+					"fluid": false,
+					"name": "400",
+					"size": "24px",
+					"slug": "400"
+				},
+				{
+					"fluid": false,
+					"name": "300",
+					"size": "20px",
+					"slug": "300"
+				}
+			]
+		},
+		"layout": {
+			"contentSize": "83rem",
+			"wideSize": "103rem"
+		},
+		"spacing": {
+			"spacingScale": {
+				"steps": 0
+			},
+			"spacingSizes": [
+				{
+					"name": "18",
+					"size": "18px",
+					"slug": "18"
+				},
+				{
+					"name": "24",
+					"size": "24px",
+					"slug": "24"
+				},
+				{
+					"name": "28",
+					"size": "28px",
+					"slug": "28"
+				},
+				{
+					"name": "36",
+					"size": "36px",
+					"slug": "36"
+				},
+				{
+					"name": "38",
+					"size": "38px",
+					"slug": "38"
+				},
+				{
+					"name": "48",
+					"size": "48px",
+					"slug": "48"
+				},
+				{
+					"name": "52",
+					"size": "52px",
+					"slug": "52"
+				},
+				{
+					"name": "56",
+					"size": "56px",
+					"slug": "56"
+				},
+				{
+					"name": "60",
+					"size": "60px",
+					"slug": "60"
+				},
+				{
+					"name": "80",
+					"size": "80px",
+					"slug": "80"
+				},
+				{
+					"name": "90",
+					"size": "90px",
+					"slug": "90"
+				},
+				{
+					"name": "100",
+					"size": "100px",
+					"slug": "100"
+				},
+				{
+					"name": "120",
+					"size": "120px",
+					"slug": "120"
+				},
+				{
+					"name": "130",
+					"size": "130px",
+					"slug": "130"
+				},
+				{
+					"name": "140",
+					"size": "140px",
+					"slug": "140"
+				},
+				{
+					"name": "160",
+					"size": "160px",
+					"slug": "160"
+				},
+				{
+					"name": "180",
+					"size": "180px",
+					"slug": "180"
+				}
+			]
+		}
+	},
+	"styles": {
+		"color": {
+			"text": "var:preset|color|neutral-400",
+			"background": "var:preset|color|neutral-200"
+		},
+		"spacing": {
+			"padding": {
+				"top": "0",
+				"bottom": "0",
+				"left": "2rem",
+				"right": "2rem"
+			}
+		}
+	},
+	"patterns": [
+		"hero"
+	]
 }

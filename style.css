@@ -7,3 +7,7 @@
  * Text Domain:       animal-shelter
  * Domain Path:       /assets/lang
  */
+
+* {
+  outline: 1px solid red;
+}
